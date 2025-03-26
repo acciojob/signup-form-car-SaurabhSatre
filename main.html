@@ -7,39 +7,44 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<form>
-		<lable for="name">Name</lable>
-		<input type="text" id="name" placeholder="Name" required>
-		<lable for="email">Email</lable>
-		<input type="email" id="email" placeholder="Email" required>
+ <form method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
 
-		<lable for="gender_m">Male</lable>
-		<input type="radio" id="gender_m" name="gender" required>
-		<lable for="gender_f">Female</lable>
-		<input type="radio" id="gender_f" name="gender" required>
-		<lable for="cars">Select a car</lable>
-		<select placeholder="--Please choose an option--" id="cars" required>
-			<option>BMW</option>
-			<option>Audi</option>
-			<option>toyota</option>
-		</select>
-		
-		<lable for="age">Age</lable>
-		<input type="number" id="age" placeholder="Age" required> 
-		<lable for="dob">DOB</lable>
-		<input type="date" id="dob" required> 
-		<lable for="tel">Phone Number</lable>
-		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"> 
-		<lable for="password">Password</lable>
-		<input type="password" id="password" placeholder="Password" required> 
-		<lable for="tos">I agree to the TOS</lable>
-		<input type="checkbox" id="tos" placeholder="" required> 
-		
-		<button type="submit">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
 
-		
-	</form>
+        <label>Gender</label>
+        <input type="radio" id="gender_m" name="gender" value="male" required>
+        <label for="gender_m">Male</label>
+        <input type="radio" id="gender_f" name="gender" value="female" required>
+        <label for="gender_f">Female</label>
+
+        <label for="cars">Select a car</label>
+        <select id="cars" name="cars" required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Toyota">Toyota</option>
+        </select>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="tel">Phone Number</label>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+
+        <input type="checkbox" id="tos" name="tos" required>
+        <label for="tos">I agree to the TOS</label>
+
+        <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
